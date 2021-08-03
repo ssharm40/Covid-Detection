@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <!--font awesone cnd link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--custom css file link-->
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='style.css')}}">
+
+
+</head>
+
+<body>
+    <!--header section start-->
+    <header>
+        <a href="#" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+        <div id="menu" class="fas fa-bars">
+
+        </div>
+
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#prevent">prevent</a>
+            <a href="#symptoms">symptoms</a>
+            <a href="#precautions">precautions</a>
+            <a href="#doctor">doctor</a>
+            <a href="#hand-wash">hand-wash</a>
+        </nav>
+    </header>
+s
+    <!--header sectio end-->
+
+    <!-- home section starts-->
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Prevention from Corona Virus</h1>
+            <h3>stay home ,stay safe</h3>
+            <a href="{{ url_for('index')}}" class="btn">Do you want to check the probablity of covid-19</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- home section end-->
+
+
+
+    <!-- prevent section starts-->
+
+    <section class="prevent" id="prevent">
+        <h1 class="heading">how to prevent virus</h1>
+
+
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="static\images\pre-1 (1).png" alt="">
+                <h3>wash your place </h3>
+                <p>Avoid touching surfaces, especially in public setting or health facilities, in case people infected people have touched them then clean the surfaces
+
+                </p>
+
+            </div>
+
+            <div class="box">
+                <img src="static\images\pre-2.png" alt="">
+                <h3>maintain distance </h3>
+                <p>Be a Hero and break the chain of Coid-19 transmission by practicing Physical Distance.
+                    We should keep a distance of at least 2m from each other and avoid spending time in crowded place.
+                </p>
+
+            </div>
+
+            <div class="box">
+                <img src="static\images\pre-3.png" alt="">
+                <h3>don't touch face </h3>
+                <p>It's estimated that people touch their face about 23 time per hour! When you touch your
+                    face, the germs on your hands can take up residence in your mucous membrances and causes
+                    infections.
+                </p>
+
+            </div>
+
+            <div class="box">
+                <img src="static\images\pre-4.png" alt="">
+                <h3>wash your hand </h3>
+                <p>Frequent and proper hand hygine is one of the most important measures against the Covid-19</p>
+
+            </div>
+
+            <div class="box">
+                <img src="static\images\pre-5 (1).png" alt="">
+                <h3>use napkin </h3>
+                <p>Place The Napkin To The Side When You Get Up During The Meal. If You Need To Excuse Yourself From The Table, You Should Use One Hand To Pick It Up And Then Loosely Fold The Napkin, 
+                    Placing It To The Left Or Right Of Your Plate. </p>
+
+            </div>
+
+            <div class="box">
+                <img src="static\images\pre-6.png" alt="">
+                <h3>waer a mask </h3>
+                <p>Masks Should Be Used As Part Of A Comprehensive Strategy Of Measures To Suppress Transmission And Save Lives; The Use Of A Mask is such an efficient way To Provide An Adequate Level Of Protection Against COVID-19.</p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!-- prevent section end-->
+
+    <!-- symptoms section starts -->
+
+
+    <section class="symptoms" id="symptoms">
+
+        <h1 class="heading">Covid-19 symptoms</h1>
+
+        <div class="column">
+
+            <div class="main-image">
+
+                <img src="static\images\main-symp-img.png" alt="">
+            </div>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="static\images\symp-a.png" alt="">
+                    <h3>dry cough</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\symp-b.png" alt="">
+                    <h3>sore throat</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\symp-c.png" alt="">
+                    <h3>cold</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\symp-d.png" alt="">
+                    <h3>fever</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\symp-e.png" alt="">
+                    <h3>headache</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\symp-f.png" alt="">
+                    <h3>vomiting</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- symptoms section end -->
+
+    <!-- precautions section starts-->
+
+    <section class="precautions" id="precautions">
+
+        <h1 class="heading">take precaution against covid-19</h1>
+
+        <div class="column">
+
+            <div class="box-container">
+
+                <h3 class="tilte">things you should you Do</h3>
+
+                <div class="box">
+
+                    <img src="static\images\do-img1 (2).png" alt="">
+                    <div class="info">
+                        <h3>wash your hand</h3>
+                        <p>Frequent And Proper Hand Hygine Is One Of The Most Important Measures Against The Covid-19</p>
+
+                    </div>
+                </div>
+
+                <div class="box">
+
+                    <img src="static\images\do-img2 (1).png" alt="">
+                    <div class="info">
+                        <h3>stay home during fever </h3>
+                        <p>As much as possible, keep away from other people and pets in the home.
+                            If the person who is sick can't wear a mask, 
+                            caregivers should wear one while they're in the same room.</p>
+
+                    </div>
+                </div>
+
+                <div class="box">
+
+                    <img src="static\images\do-img3.png" alt="">
+                    <div class="info">
+                        <h3>avoid crowded area</h3>
+                        <p>it is essential that people follow safety precautions 
+                            when they are outdoors and avoid crowded places for Deepavali shopping</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box-container">
+
+                <h3 class="tilte">things you should you not Do</h3>
+
+                <div class="box">
+
+                    <img src="static\images\dont-img1.png" alt="">
+                    <div class="info">
+                        <h3>avoid close contact with animals</h3>
+                        <p>Most diseases spread from pets to people through biting, scratching or direct contact. 
+                            The first step to prevent injuries is to train your dog or cat not to bite.</p>
+
+                    </div>
+                </div>
+
+                <div class="box">
+
+                    <img src="static\images\dont-img2.png" alt="">
+                    <div class="info">
+                        <h3>avoid close contact with people </h3>
+                        <p><b>Inside your home:</b> Avoid close contact with people who are sick. If possible, maintain 6 feet between the person who is sick and other household members.
+                            <b>Outside your home:</b> Put 6 feet of distance between yourself and people who don't live in your household.</p>
+
+                    </div>
+                </div>
+
+                <div class="box">
+
+                    <img src="static\images\dont-img3.png" alt="">
+                    <div class="info">
+                        <h3>avoid crowded area</h3>
+                        <p>it is essential that people follow safety precautions 
+                            when they are outdoors and avoid crowded places for Deepavali shopping</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- precautions section end-->
+
+    <!-- doctor section start-->
+
+    <section class="doctor" id="doctor">
+        <h1 class="heading">consult to our doctors</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="static\images\doc1.png" alt="">
+                <h3>Dr. john doe</h3>
+                <span>senior expert</span>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab-fa-facebook-f"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="static\images\doc2.png" alt="">
+                <h3>Dr. Jane</h3>
+                <span>senior expert</span>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab-fa-facebook-f"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="static\images\doc3 (2).png" alt="">
+                <h3> jenni</h3>
+                <span>senior nurse</span>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab-fa-facebook-f"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- doctor section end-->
+
+    <!-- hand-wash section start-->
+
+    <section class="hand-wash" id="hand-wash">
+        <h1 class="heading">how to wash hand properly</h1>
+
+        <div class="column">
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="static\images\wash-a.png" alt="">
+                    <h3>water and soap</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\wash-b (1).png" alt="">
+                    <h3>palm to palm</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\wash-c (1).png" alt="">
+                    <h3>Between fingurs</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\wash-d.png" alt="">
+                    <h3>focus on Thumbs</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\wash-e.png" alt="">
+                    <h3>back of hands</h3>
+                </div>
+
+                <div class="box">
+                    <img src="static\images\wash-f.png" alt="">
+                    <h3>focus on wrist</h3>
+                </div>
+
+            </div>
+
+            <div class="main-image">
+                <img src="static\images\main-wash-img.png" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- hand-wash section end-->
+
+    <!-- footer section starts-->
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates quaerat placeat!
+            </p>
+        </div>
+     
+        <div class="box">
+            <h3>locations</h3>
+            <a href="{{ url_for('caseforIndia')}}">india</a> 
+            <a href="{{ url_for('caseforUsa')}}">USA</a>
+            <a href="{{ url_for('caseforFrance')}}">france</a>
+            <a href="{{ url_for('caseforRussia')}}">russia</a>
+            <a href="{{ url_for('caseforJapan')}}">japan</a>   
+        </div>
+         
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class=>home</a> 
+            <a href="#">prevent</a>
+            <a href="#">symptoms</a>
+            <a href="#">precautions</a>
+            <a href="#">doctor</a>
+            <a href="#">hand-wash</a>   
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#home">facebook</a> 
+            <a href="#prevent">twitter</a>
+            <a href="#symptoms">instagram</a>
+            <a href="#precautions">linkedin</a>
+            <a href="#hand-wash">youtube</a>
+             
+        </div>
+        <h1 class="credit">created by <a href="#">mr deepesh yadav  </a>&copy; copyright @ 2021</h1>
+    </div>
+  </div>
+    <!-- footer section end-->
+
+    <!-- scroll top-->
+     <a href=" #home" class="scroll-top">
+         <img src="static\images\scroll-img (1).png" alt="">
+     </a>
+
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <!--custom js file link-->
+    <script src="script.js"></script>
+</body>
+
+</html>

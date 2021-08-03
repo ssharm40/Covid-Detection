@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Current case India</title>
+    <style>
+        .case{
+            background:url(images/background-img\ \(1\).jpg) no-repeat;
+        }
+
+
+        h1,h2{
+            text-align: center;
+             padding: 2rem;
+             font-size: 2rem;
+        }
+
+    </style>
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class='case'>
+        <center>
+        <section class="symptoms" id="symptoms">
+        <img src="" alt="">
+        <h1 class="dip">Country name</h1>
+        <p class='mt-5'>
+            <b><h2>{{a['country']}}</h2></b>
+        </p>
+        <h1>Confirmed</h1>
+        
+        <p class='mt-5'>
+            <b><h2>{{a['confirmed']}}</h2></b>
+        </p>
+       
+        <h1>Active</h1>
+        <p class='mt-5'>
+            <b><h2>{{a['active']}}</h2></b>
+        </p>
+        <h1>Deaths</h1>
+       <p class='mt-5'>
+            <b><h2>{{a['deaths']}}</h2></b>
+        </p>
+        <h1>Recovered</h1>
+        <p class='mt-5'>
+            <b><h2>{{a['recovered']}}</h2></b>
+        </p>
+    </section>
+    </center>
+
+    </div>
+
+</body>
+</html>
